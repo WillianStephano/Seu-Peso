@@ -1,0 +1,185 @@
+:root{
+   --txt_preto: #100f0f;
+   --azul: #478ec8;
+   --branco: #f8f8f8
+}
+
+html{
+   font-family: 'nunito', sans-serif;
+}
+
+.cabecalho{
+   border-bottom: 1px solid #dfdfdf;
+}
+
+.cabecalho .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 90%;
+   margin: 2% auto;
+}
+
+.logo{
+   width: 40%;
+}
+
+.img_logo{
+   width: 40px;
+   vertical-align: middle;
+   padding-right: 4%;
+}
+
+.txt_logo{
+   font-size: 24px;
+   font-weight: 800;
+}
+
+.menu_nav{
+   width: 30%;
+}
+
+.menu_lista{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+
+.item_menu{
+   color: var(--txt_preto);
+   font-weight: 600;
+   font-size: 17px;
+}
+
+
+
+/* Intro */
+
+.secao_intro{
+   width: 90%;
+   margin: 5% auto;
+}
+
+.secao_intro .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.conteudo_txt_intro{
+   width: 40%;
+}
+
+.titulo_intro{
+   font-size: 48px;
+   font-weight: 700;
+   color: var(--txt_preto);
+}
+
+.conteudo_img_intro{
+   width: 30%;
+}
+
+.ilustracao{
+   width: 100%;
+   height: 400px;
+}
+
+
+
+
+/* Sobre */
+
+.secao_sobre{
+   width: 90%;
+   margin: 5% auto;
+}
+
+.secao_sobre .container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 30px;
+}
+
+.titulo_sobre{
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.txt_sobre{
+   width: 70%;
+   text-align: center;
+   line-height: 1.3rem;
+}
+
+
+
+/* Peso */
+
+.secao_peso{
+   width: 90%;
+   margin: 5% auto;
+}
+
+.secao_peso .container{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   row-gap: 50px;
+}
+
+.conteudo_tabela{
+   width: 40%;
+}
+
+.tabela{
+   width: 100%;
+}
+
+tr ,th, td{
+   border: 1px solid black;
+   padding: 5px;
+   text-align: center;
+}
+
+
+/* Formulario */
+
+.formulario{
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   row-gap: 30px;
+}
+
+.grupo_formulario{
+  
+}
+
+.grupo_formulario label{
+   font-weight: 600;
+}
+
+.grupo_formulario input{
+   width: 80%;
+   height: 25px;
+}
+
+.bt_enviar{
+   width: 50%;
+   align-self: center;
+   height: 35px;
+   background-color: var(--azul);
+   color: var(--branco);
+   font-weight: 600;
+   font-size: 17px;
+   border: 1px solid #7a7a7a;
+   box-shadow: 1px 5px 5px #50505086;
+}
+
+.bt_enviar:hover{
+   cursor: pointer;
+   background-color: #81bdee;
+   transition: 250ms;
+}
