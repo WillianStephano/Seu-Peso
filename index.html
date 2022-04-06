@@ -23,9 +23,9 @@
          
          <nav class="menu_nav">
             <ul class="menu_lista">
-               <li class="item_menu">aaaaaa</li>
-               <li class="item_menu">aaaaaa</li>
-               <li class="item_menu">aaaaaa</li>
+               <li class="item_menu">Inicio</li>
+               <li class="item_menu">Sobre nos</li>
+               <li class="item_menu">Registre</li>
             </ul>
          </nav>
       </div>
@@ -58,19 +58,28 @@
       <div class="container">
          <div class="conteudo_tabela">
             <table class="tabela">
-               <tr>
-                  <td>Data</td>
-                  <td>Peso</td>
-               </tr>
-               <tr>
-                  <td>a</td>
-                  <td>b</td>
-               </tr>
-                  
+               <thead>
+                  <th>Data</th>
+                  <th>Nome</th>
+                  <th>Peso</th>
+               </thead>
+               <tbody>
+                  <tr class="usuario">
+                     <td>Data atual</td>
+                     <td>Nome do usuario</td>
+                     <td>--</td>
+                  </tr>
+               </tbody>
             </table>
          </div>
          
          <form action="" class="formulario">
+
+            <div class="grupo_formulario">
+               <label for="data_campo">Nome:</label>
+               <input type="text" id="nome_campo" placeholder="Nome">
+            </div>
+
             <div class="grupo_formulario">
                <label for="data_campo">Data:</label>
                <input type="text" id="data_campo" placeholder="Insira a data">
@@ -78,15 +87,20 @@
             
             <div class="grupo_formulario">
                <label for="peso_campo">Peso:</label>
-               <input type="text" id="peso_campo" placeholder="Valor do peso">
+               <input type="text" id="peso_campo" placeholder="Valor do peso" name="data">
             </div>
-
-            <input class="bt_enviar" type="submit" value="Enviar" > 
-         </form>
-         
-         
+            
+            <input class="bt_enviar" type="submit" value="Enviar" name="peso" > 
+         </form>         
       </div>
    </section>
    
+   <hr class="linha">
+   <footer class="rodape">
+      <p class="txt_rodape">&copy; Willian Stephano</p>
+   </footer>
+   
+   <!-- js -->
+   <script src="js/main.js"></script>
 </body>
 </html>

@@ -143,18 +143,21 @@ tr ,th, td{
    text-align: center;
 }
 
+th{
+   background-color: #ececec;
+   font-weight: 600;
+}
+
+
+
+
 
 /* Formulario */
-
 .formulario{
    width: 40%;
    display: flex;
    flex-direction: column;
    row-gap: 30px;
-}
-
-.grupo_formulario{
-  
 }
 
 .grupo_formulario label{
@@ -164,6 +167,12 @@ tr ,th, td{
 .grupo_formulario input{
    width: 80%;
    height: 25px;
+   border-radius: 5px;
+   border: 1px solid #808080;
+}
+
+.grupo_formulario input:focus{
+   outline: 1px solid var(--azul);
 }
 
 .bt_enviar{
@@ -174,12 +183,28 @@ tr ,th, td{
    color: var(--branco);
    font-weight: 600;
    font-size: 17px;
-   border: 1px solid #7a7a7a;
+   border: 1px solid #686af8;
    box-shadow: 1px 5px 5px #50505086;
+   border-radius: 5px;
 }
 
 .bt_enviar:hover{
    cursor: pointer;
    background-color: #81bdee;
    transition: 250ms;
+}
+
+
+
+
+/* Rodape */
+
+.linha{
+   border-bottom: none;
+   border-top: 1px solid #dfdfdf;
+}
+
+.txt_rodape{
+   text-align: center;
+   font-size: 14px;
 }
