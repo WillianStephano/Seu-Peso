@@ -20,7 +20,7 @@ O projeto é composto por uma pagina que contem 3 seções principais:
 
 
 
-<img src="conteudo/previa-img.PNG" alt="Imagem de pré-visualização da pagina">
+<img src="Conteudo/previa-img.PNG" alt="Imagem de pré-visualização da pagina">
 
 ---
 
