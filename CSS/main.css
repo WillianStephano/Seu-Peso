@@ -6,6 +6,7 @@
 
 html{
    font-family: 'nunito', sans-serif;
+   scroll-behavior: smooth;
 }
 
 .cabecalho{
@@ -55,6 +56,11 @@ html{
    font-size: 17px;
 }
 
+a{
+   text-decoration: none;
+   color: var(--txt_preto);
+}
+
 
 
 /* Intro */
@@ -93,7 +99,6 @@ html{
 
 
 /* Sobre */
-
 .secao_sobre{
    width: 90%;
    margin: 5% auto;
@@ -120,7 +125,6 @@ html{
 
 
 /* Peso */
-
 .secao_peso{
    width: 90%;
    margin: 5% auto;
