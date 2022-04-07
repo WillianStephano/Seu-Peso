@@ -13,25 +13,32 @@ btEnviar.addEventListener('click',function (event) {
    const nome = formulario.querySelector('#nome_campo').value
    const peso = formulario.querySelector('#peso_campo').value
    
-   //Criar uma linha na tabela
-   var usuarioTr = document.createElement('tr')
-   
-   //Cria as celulas e insere os valores
-   var dataTd = document.createElement('td')
-   var nomeTd = document.createElement('td')
-   var pesoTd = document.createElement('td')
-   
-   dataTd.textContent = data
-   nomeTd.textContent = nome
-   pesoTd.textContent = peso
-   
-   //Coloca os td como filho da tr
-   usuarioTr.appendChild(dataTd)
-   usuarioTr.appendChild(nomeTd)
-   usuarioTr.appendChild(pesoTd)
-   
-   tabela.appendChild(usuarioTr)
-})   
+   //validacao de formulario
+   if (data == '' || nome == '' || peso == '') {
+      window.alert('ERRO: Formulario campos invalidos')
+      
+   } else {
+      
+      //Criar uma linha na tabela
+      var usuarioTr = document.createElement('tr')
+      
+      //Cria as celulas e insere os valores
+      var dataTd = document.createElement('td')
+      var nomeTd = document.createElement('td')
+      var pesoTd = document.createElement('td')
+      
+      dataTd.textContent = data
+      nomeTd.textContent = nome
+      pesoTd.textContent = peso
+      
+      //Coloca os td como filho da tr
+      usuarioTr.appendChild(dataTd)
+      usuarioTr.appendChild(nomeTd)
+      usuarioTr.appendChild(pesoTd)
+      
+      tabela.appendChild(usuarioTr)
+   }
+})
 
 
 
