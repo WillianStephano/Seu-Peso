@@ -32,3 +32,20 @@ btEnviar.addEventListener('click',function (event) {
    
    tabela.appendChild(usuarioTr)
 })   
+
+
+
+
+/* Toggle menu */
+
+//Selecao de itens
+const btMenu = document.querySelector('.menu_mobile')
+const toggleMenu = document.querySelector('.menu_nav')
+
+
+//ao clicar no bt ele ira adicionar a classe que mostra o menu
+btMenu.addEventListener('click', function () {
+   
+   toggleMenu.classList.toggle('menu_ativo')
+   
+})

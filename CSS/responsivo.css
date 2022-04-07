@@ -8,13 +8,33 @@
       width: 100%;
       row-gap: 15px;
    }
-   
-   .menu_lista{
-      flex-direction: column;
+
+   .logo{
+      display: flex;
+      width: 90%;
+   }
+
+   .txt_logo{
+      width: 100%;
+   }
+
+   .menu_mobile{
+      display: block;
+      width: 20px;
    }
    
    .menu_nav{
       width: 100%;
+      display: none;
+      
+   }
+
+   .menu_ativo{
+      display: block;
+   }
+
+   .menu_lista{
+      flex-direction: column;
    }
 
    .item_menu{

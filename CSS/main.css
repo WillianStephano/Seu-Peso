@@ -24,6 +24,10 @@ html{
    width: 40%;
 }
 
+.menu_mobile{
+   display: none;
+}
+
 .img_logo{
    width: 40px;
    vertical-align: middle;
