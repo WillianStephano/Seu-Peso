@@ -2,14 +2,20 @@
   <br>SeuPeso
 </h1>
 
+<p align="center">
+  <a href="https://willianstephano.github.io/Seu-Peso/">
+    <b>🚀Acesse o projeto 🚀</b>
+  </a>
+  
+  <h5 align="center">
+  🛠️ Em construção 
+</h5>
 
 <h4 align="center">
   Projeto criado com o intuito de aprimorar meus conhecimentos nas tecnologias HTML, CSS e Js.
 </h4>
 
-<h5 align="center">
-  🛠️ Em construção 
-</h5>
+
 
 ## 📚 Seções
 O projeto é composto por uma pagina que contem 3 seções principais:
