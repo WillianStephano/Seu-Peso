@@ -124,7 +124,7 @@ a{
 
 
 
-/* Peso */
+/*#################### Peso ####################*/
 .secao_peso{
    width: 90%;
    margin: 5% auto;
@@ -160,7 +160,7 @@ th{
 
 
 
-/* Formulario */
+/* ####################Formulario#################### */
 .formulario{
    width: 40%;
    display: flex;
@@ -180,7 +180,7 @@ th{
 }
 
 .grupo_formulario input:focus{
-   outline: 1px solid var(--azul);
+   outline: 1px solid #2083d3;
 }
 
 .bt_enviar{
@@ -191,21 +191,118 @@ th{
    color: var(--branco);
    font-weight: 600;
    font-size: 17px;
-   border: 1px solid #686af8;
+   border: 1px solid #9e9e9e;
    box-shadow: 1px 5px 5px #50505086;
-   border-radius: 5px;
+   border-radius: 6px;
+   height: 40px;
 }
 
 .bt_enviar:hover{
    cursor: pointer;
-   background-color: #81bdee;
+   background-color: #64afed;
    transition: 250ms;
 }
 
 
 
 
-/* Rodape */
+
+/* #################### Imc #################### */
+.secao_imc{
+   width: 90%;
+   margin: 0% auto;
+}
+
+.secao_imc .container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 30px;
+}
+
+.titulo_imc{
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.txt_imc{
+   width: 70%;
+   text-align: center;
+   line-height: 1.3rem;
+}
+
+.subtitulo_imc{
+   font-weight: 600;
+}
+
+.form_imc{
+   width: 40%;
+   text-align: center;
+}
+
+.form_imc .container{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.grupo_formulario_imc{
+   width: 65%;
+   display: inline-block;
+}
+
+.grupo_formulario_imc label{
+   font-weight: 600;
+   font-size: 14px;
+   display: block;
+}
+
+.grupo_formulario_imc input{
+   width: 35%;
+   height: 25px;
+   border-radius: 5px;
+   border: 1px solid #808080;
+}
+
+.grupo_formulario_imc input:focus{
+   outline: 1px solid #2083d3;
+}
+
+.grupo_bt_imc{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   gap: 30%;
+   margin-top: 4%;
+}
+
+.bt_calcular_imc, .bt_limpar_imc {
+   width: 20%;
+   height: 32px;
+   border-radius: 6px ;
+   border: 1px solid #9e9e9e;
+   background-color: var(--azul);
+   color: #ffffff;
+   font-weight: 600;
+}
+
+.bt_calcular_imc:hover ,.bt_limpar_imc:hover{
+   cursor: pointer;
+   transition: 250ms;
+   background-color: #64afed;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #################### Rodape #################### */
 
 .linha{
    border-bottom: none;

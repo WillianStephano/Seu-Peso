@@ -21,7 +21,7 @@
    <header class="cabecalho">
       <div class="container">
          <div class="logo">
-            <h1 class="txt_logo"><img class="img_logo" src="Conteudo/weight-scale.svg" alt="Imagem de uma balça depesagem em tons brancos e azuis">Seu peso</h1>
+            <h1 class="txt_logo"><img class="img_logo" src="Conteudo/weight-scale.svg" alt="Imagem de uma balança depesagem em tons brancos e azuis">Seu peso</h1>
             <img class="menu_mobile" src="Conteudo/bars-solid.svg" alt="Menu em barras">  
          </div>
          
@@ -99,6 +99,45 @@
       </div>
    </section>
    
+   <section class="secao_imc">
+      <div class="container">
+         <h2 class="titulo_imc">Cálculo IMC</h2>
+         <p class="txt_imc">IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde
+            para calcular o peso ideal de cada pessoa. O índice é calculado da seguinte maneira: divide-se o peso do paciente
+            pela sua altura elevada ao quadrado. Diz-se
+            que oindivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+         </p>
+         <p class="subtitulo_imc">
+            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo.
+         </p>
+         
+         <form class="form_imc" action="">
+            <div class="container">
+               <div class="grupo_formulario_imc">
+                  <label for="altura_campo">Altura:</label>
+                  <input type="text" id="altura_campo" placeholder="Metros">   
+               </div>
+               
+               <div class="grupo_formulario_imc">
+                  <label for="peso_campo">Peso:</label>
+                  <input type="text" id="peso_campo" placeholder="Quilos">
+               </div>
+            </div>
+            
+            <div class="grupo_bt_imc">
+               <input class="bt_calcular_imc" type="submit" value="Calcular" name="peso" > 
+               <input class="bt_limpar_imc" type="reset" value="Limpar" name="peso" > 
+            </div>
+         </form>
+
+         <div class="resultado_imc">
+            <p class="txt_resultado_imc">Seu IMC:</p>
+         </div>
+      </div>
+   </section>
+   
+   
+   
    <hr class="linha">
    <footer class="rodape">
       <p class="txt_rodape">&copy; Willian Stephano</p>
@@ -106,5 +145,6 @@
    
    <!-- js -->
    <script src="js/main.js"></script>
+   <script src="js/IMC.js"></script>
 </body>
 </html>
