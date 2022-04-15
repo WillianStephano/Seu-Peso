@@ -98,10 +98,10 @@ a{
 
 
 
-/* Sobre */
+/* #################### Sobre #################### */
 .secao_sobre{
    width: 90%;
-   margin: 5% auto;
+   margin: 10% auto 0;
 }
 
 .secao_sobre .container{
@@ -146,13 +146,13 @@ a{
 }
 
 tr ,th, td{
-   border: 1px solid black;
+   border: 1px solid rgb(113, 113, 113);
    padding: 5px;
    text-align: center;
 }
 
 th{
-   background-color: #ececec;
+   background-color: #dce6f3;
    font-weight: 600;
 }
 
@@ -210,7 +210,7 @@ th{
 /* #################### Imc #################### */
 .secao_imc{
    width: 90%;
-   margin: 0% auto;
+   margin: 15% auto 0;
 }
 
 .secao_imc .container{
@@ -292,6 +292,19 @@ th{
    background-color: #64afed;
 }
 
+.tabela_imc{
+   width: 45%;
+   font-size: 14px;
+}
+
+.tabela_imc thead{
+   text-transform: uppercase;
+}
+
+.linha_tabela_imc{
+   font-weight: 600;
+   color: #3d3d3d;
+}
 
 
 

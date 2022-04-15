@@ -15,7 +15,7 @@ btEnviar.addEventListener('click',function (event) {
    
    //validacao de formulario
    if (data == '' || nome == '' || peso == '') {
-      window.alert('ERRO: Formulario campos invalidos')
+      window.alert('ERRO: Campos invalidos')
       
    } else {
       

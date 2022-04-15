@@ -28,8 +28,8 @@
          <nav class="menu_nav">
             <ul class="menu_lista">
                <li class="item_menu"><a href="#">Inicio</a></li>
-               <li class="item_menu"><a href="#secao_sobre">Sobre nos</a></li>
-               <li class="item_menu"><a href="#secao_peso">Registre</a></li>
+               <li class="item_menu"><a href="#secao_sobre">Registre</a></li>
+               <li class="item_menu"><a href="#secao_imc">Imc</a></li>
             </ul>
          </nav>
       </div>
@@ -48,7 +48,7 @@
    
    <section class="secao_sobre" id="secao_sobre">
       <div class="container">
-         <h2 class="titulo_sobre">Titulo aqui</h2>
+         <h2 class="titulo_sobre">Registre tudo</h2>
          <p class="txt_sobre">Tempor amet in commodo sint sit laborum occaecat id consectetur est laborum. Nisi esse aliqua non
             velit. Excepteur et ad do ex nisi voluptate eu quis nisi elit non sit. Labore quis sit minim proident non sunt et
             aute labore id. Culpa incididunt commodo cupidatat ut. Incididunt ea aliquip dolore eu deserunt irure nulla
@@ -99,9 +99,9 @@
       </div>
    </section>
    
-   <section class="secao_imc">
+   <section class="secao_imc" id="secao_imc">
       <div class="container">
-         <h2 class="titulo_imc">Cálculo IMC</h2>
+         <h2 class="titulo_imc">Cálculo de IMC</h2>
          <p class="txt_imc">IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde
             para calcular o peso ideal de cada pessoa. O índice é calculado da seguinte maneira: divide-se o peso do paciente
             pela sua altura elevada ao quadrado. Diz-se
@@ -129,11 +129,41 @@
                <input class="bt_limpar_imc" type="reset" value="Limpar" name="peso" > 
             </div>
          </form>
-
+         
          <div class="resultado_imc">
-            <p class="txt_resultado_imc">Seu IMC:</p>
+            <p class="txt_resultado">Seu IMC: <span class="txt_resultado_imc">0.00</span> </p>
          </div>
+
+         <table class="tabela_imc">
+            <thead >
+               <th>imc</th>
+               <th>classificação</th>
+            </thead>
+            <tbody>
+               <tr class="linha_tabela_imc">
+                  <td>Menor que 18,5</td>
+                  <td>Magreza</td>
+               </tr>
+               <tr class="linha_tabela_imc">
+                  <td>Entre que 18,5 E 24,9</td>
+                  <td>Normal</td>
+               </tr>
+               <tr class="linha_tabela_imc">
+                  <td>Entre que 25,0 E 29,9</td>
+                  <td>Sobrepeso</td>
+               </tr>
+               <tr class="linha_tabela_imc">
+                  <td>Entre que 30,0 E 39,9</td>
+                  <td>Obesidade</td>
+               </tr>
+               <tr class="linha_tabela_imc">
+                  <td>Maior que 40,0</td>
+                  <td>Obesidade Grave</td>
+               </tr>
+            </tbody>
+         </table>
       </div>
+
    </section>
    
    

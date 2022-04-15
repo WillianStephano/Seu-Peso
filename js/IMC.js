@@ -1,6 +1,7 @@
 //Selecionando elementos do HTML
 const formImc = document.querySelector('.form_imc')
 const btCalcImc = formImc.querySelector('.bt_calcular_imc')
+const btLimparImc =formImc.querySelector('.bt_limpar_imc')
 var resulTxt = document.querySelector('.txt_resultado_imc')
 
 btCalcImc.addEventListener('click',function (event) {
@@ -19,6 +20,14 @@ btCalcImc.addEventListener('click',function (event) {
    
    console.log(resulTxt);
 })
+
+
+
+//ao clilar no botao limpar ira remover o conteudo do resultado
+btLimparImc.addEventListener('click', function () {
+   resulTxt.textContent = '0.00'
+})
+
 
 
 
