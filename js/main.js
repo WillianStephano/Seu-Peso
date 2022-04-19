@@ -1,7 +1,7 @@
 //Selecionando os elementos do formulario
 const formulario = document.querySelector(".formulario");
 const btEnviar = formulario.querySelector(".bt_enviar");
-const tabela = document.querySelector(".tabela");
+const tabela = document.querySelector(".tabela_peso");
 
 btEnviar.addEventListener("click", function (event) {
    event.preventDefault();
@@ -15,7 +15,9 @@ btEnviar.addEventListener("click", function (event) {
    if (validacao == false) {
       window.alert("ERRO: Campos invalidos");
    } else if (validacaoPeso(usuario.peso) == true) {
-      var user = montaTr(usuario);
+      montaTr(usuario);
+
+      formulario.reset();
    }
 });
 
@@ -30,7 +32,6 @@ function obtemUsuarioForm(formulario) {
    };
    return usuario;
 }
-
 
 
 
@@ -56,14 +57,15 @@ function validacaoPeso(peso) {
 
 
 
-//Criar uma linha na tabela
 function montaTr(usuario) {
    var usuarioTr = document.createElement("tr");
+   usuarioTr.classList.add('usuario_tabela_peso');
+
    
    //Cria as celulas e insere os valores
-   var tagNome = montaTd(usuario.nome);
-   var tagData = montaTd(usuario.data);
-   var tagPeso = montaTd(usuario.peso);
+   var tagNome = montaTd(usuario.nome, 'info_tabela_peso');
+   var tagData = montaTd(usuario.data, 'info_tabela_peso');
+   var tagPeso = montaTd(usuario.peso, 'info_tabela_peso');
    
    //Coloca os td como filho da tr
    usuarioTr.appendChild(tagNome);
@@ -75,8 +77,9 @@ function montaTr(usuario) {
 
 
 
-function montaTd(valor) {
+function montaTd(valor, classe) {
    var td = document.createElement("td");
+   td.classList.add(classe)
    td.textContent = valor;
    
    return td;

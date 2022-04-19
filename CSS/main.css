@@ -137,23 +137,23 @@ a{
    row-gap: 50px;
 }
 
-.conteudo_tabela{
+.conteudo_tabela_peso{
    width: 40%;
 }
 
-.tabela{
+.tabela_peso{
    width: 100%;
+}
+
+th{
+   background-color: #dce6f3;
+   font-weight: 600;
 }
 
 tr ,th, td{
    border: 1px solid rgb(113, 113, 113);
    padding: 5px;
    text-align: center;
-}
-
-th{
-   background-color: #dce6f3;
-   font-weight: 600;
 }
 
 
