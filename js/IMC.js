@@ -11,14 +11,13 @@ btCalcImc.addEventListener('click',function (event) {
    var alturaValor = formImc.querySelector('#altura_campo').value
    var pesoValor = formImc.querySelector('#peso_campo').value
 
-
-
-   var imc = pesoValor / (alturaValor * alturaValor) 
-
-  
-   resulTxt.textContent = imc.toFixed(2)
    
-   console.log(resulTxt);
+   if (validacaoImc(alturaValor, pesoValor) == true && validacaoPeso(pesoValor)) {
+     
+      var imc = pesoValor / (alturaValor * alturaValor) 
+      
+      resulTxt.textContent = imc.toFixed(2)
+   } 
 })
 
 
@@ -28,6 +27,14 @@ btLimparImc.addEventListener('click', function () {
    resulTxt.textContent = '0.00'
 })
 
+
+function validacaoImc(alturaValor, pesoValor) {
+   if (pesoValor == "" || alturaValor == "") {
+      alert('ERRO: Campos invalidos')
+      return false
+   }else
+   return true
+}
 
 
 
