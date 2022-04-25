@@ -50,8 +50,20 @@
       width: 100%;
       text-align: center;
    }
+
+   .conteudo_tabela_peso{
+      width: 100%;
+   }
    
    .txt_sobre, .conteudo_tabela, .formulario{
       width: 90%;
+   }
+
+   .subtitulo_imc{
+      text-align: center;
+   }
+
+   .form_imc, .tabela_imc{
+      width: 100%;
    }
 }
