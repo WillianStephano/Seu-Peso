@@ -10,16 +10,18 @@ btCalcImc.addEventListener('click',function (event) {
    //selecionando os valores do input
    var alturaValor = formImc.querySelector('#altura_campo').value
    var pesoValor = formImc.querySelector('#peso_campo').value
-
    
-   if (validacaoImc(alturaValor, pesoValor) == true && validacaoPeso(pesoValor)) {
-     
-      var imc = pesoValor / (alturaValor * alturaValor) 
+   
+   if (alturaValor.length == 3) {
+      alturaFormatado = alturaValor.replace(/(\d{1})/, "$1.")
+      calculaIMC(pesoValor, alturaFormatado)
       
-      resulTxt.textContent = imc.toFixed(2)
+   }else if (validacaoCampos(alturaValor, pesoValor) == true && validacaoPeso(pesoValor)) {
+      
+      calculaIMC(pesoValor, alturaValor)
+      
    } 
 })
-
 
 
 //ao clilar no botao limpar ira remover o conteudo do resultado
@@ -28,12 +30,20 @@ btLimparImc.addEventListener('click', function () {
 })
 
 
-function validacaoImc(alturaValor, pesoValor) {
+function validacaoCampos(alturaValor, pesoValor) {
    if (pesoValor == "" || alturaValor == "") {
       alert('ERRO: Campos invalidos')
       return false
    }else
    return true
+}
+
+function calculaIMC(pesoValor, alturaValor) {
+   var imc = pesoValor / (alturaValor * alturaValor) 
+   
+   resulTxt.textContent = imc.toFixed(2)
+   
+   return imc
 }
 
 
