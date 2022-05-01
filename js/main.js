@@ -68,8 +68,8 @@ function montaTr(usuario) {
    var tagPeso = montaTd(usuario.peso, 'info_tabela_peso');
    
    //Coloca os td como filho da tr
-   usuarioTr.appendChild(tagNome);
    usuarioTr.appendChild(tagData);
+   usuarioTr.appendChild(tagNome);
    usuarioTr.appendChild(tagPeso);
    
    tabela.appendChild(usuarioTr);
