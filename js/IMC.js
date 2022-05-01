@@ -37,7 +37,7 @@ btLimparImc.addEventListener('click', function () {
    const tabelaImc = document.querySelectorAll('.linha_tabela_imc')
    
    for (let i = 0; i < tabelaImc.length; i++) {
-      tabelaImc[i].classList.remove('aaaa')
+      tabelaImc[i].classList.remove('ativo')
       
    }
 })
@@ -65,21 +65,21 @@ function alteraClasseDeTabelaImc() {
    
    
    if (imc <= 18.5) {
-      tabelaImc[0].classList.add('aaaa')
+      tabelaImc[0].classList.add('ativo')
       
    }else if (imc > 18.5 && imc < 24.9) {
-      tabelaImc[1].classList.add('aaaa')
+      tabelaImc[1].classList.add('ativo')
       
    }
    else if (imc > 25 && imc < 29.9) {
-      tabelaImc[2].classList.add('aaaa')
+      tabelaImc[2].classList.add('ativo')
       
    }
    else if (imc > 29.9 && imc < 39.9) {
-      tabelaImc[3].classList.add('aaaa')
+      tabelaImc[3].classList.add('ativo')
       
    }else{
-      tabelaImc[4].classList.add('aaaa')
+      tabelaImc[4].classList.add('ativo')
    }
    
 }
