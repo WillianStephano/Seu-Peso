@@ -18,12 +18,12 @@
 
 
 ## 📚 Seções
-O projeto é composto por uma pagina que contem 3 seções principais:
+O projeto é composto por uma pagina que contem 4 seções principais:
 
 - **Sobre nos:** Conteudo de texto explicando de forma resumida o funcionamento do site;
 - **Tabela:** Tabela com os registros realizados;
 - **Formulario de registro:** Formulario de registro conteudo nome do usuario, data do registro e o peso;
-
+- **Calculo de IMC:** Seção com campos com algumas validações para calculo de IMC do usuario e uma tabela contendo as faixas de IMC;
 
 
 <img src="Conteudo/previa-img.PNG" alt="Imagem de pré-visualização da pagina">
