@@ -11,7 +11,7 @@ btCalcImc.addEventListener('click',function (event) {
    var alturaValor = formImc.querySelector('#altura_campo').value
    var pesoValor = formImc.querySelector('#peso_campo').value
    
-   //se o valor da altura for igual o programa ira adicionar um "." apos o primeiro numero 
+   //se o valor da altura for igual a 3 digitos significa que nao possui "." e o programa ira adicionar um "." apos o primeiro numero 
    if (alturaValor.length == 3) {
       alturaFormatado = alturaValor.replace(/(\d{1})/, "$1.")
       if (validacaoCampos(alturaValor, pesoValor) == true && validacaoPeso(pesoValor)) {
@@ -42,7 +42,7 @@ btLimparImc.addEventListener('click', function () {
    }
 })
 
-
+//Verifica se os campos nao estao vazios
 function validacaoCampos(alturaValor, pesoValor) {
    if (pesoValor == "" || alturaValor == "") {
       alert('ERRO: Campos invalidos')
