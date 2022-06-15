@@ -7,9 +7,6 @@
     <b>🚀Acesse o projeto 🚀</b>
   </a>
   
-  <h5 align="center">
-  🛠️ Em construção 
-</h5>
 
 <h4 align="center">
   Projeto criado com o intuito de aprimorar meus conhecimentos nas tecnologias HTML, CSS e Js.
